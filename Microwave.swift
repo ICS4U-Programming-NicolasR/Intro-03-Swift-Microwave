@@ -25,7 +25,7 @@ if (food == "PIZZA" || food == "SUB" || food == "SOUP") {
     //Try to get the input as a double if the response is nil then print an error
     if let quantity = Double(readLine()!) {
         // If statement to see if the input matches the default values
-        if quantity > 0 || quantity < 4 {
+        if (quantity > 0 && quantity < 4) {
             // Calculate
             let timeMod = Double(((quantity - 1) / 2) + 1)
             if food == "PIZZA" {
