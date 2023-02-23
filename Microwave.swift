@@ -40,7 +40,7 @@ if (food == "PIZZA" || food == "SUB" || food == "SOUP") {
             let timeMin = totalSec / 60
             print(String(format: "The time you need to enter in is \(Int(timeMin)):%02d", timeSec))
         } else {
-            print("You can only input an input of 3")
+            print("You can only input a value from 1-3")
         }
     } else {
         // Print error
