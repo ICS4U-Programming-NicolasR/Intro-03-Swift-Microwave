@@ -23,7 +23,7 @@ if (food == "PIZZA" || food == "SUB" || food == "SOUP") {
     // ask for the quantity of the amount
     print("What is the quantity of your food?")
     //Try to get the input as a double if the response is nil then print an error
-    if let quantity = Double(readLine()!) {
+    if let quantity = Int(readLine()!) {
         // If statement to see if the input matches the default values
         if (quantity > 0 && quantity < 4) {
             // Calculate
@@ -44,7 +44,7 @@ if (food == "PIZZA" || food == "SUB" || food == "SOUP") {
         }
     } else {
         // Print error
-        print("Could not convert from type String to Double (please enter in a real number)")
+        print("You entered an invalid type of input you have to input an integer value")
     }
 } else {
     print("You have entered an invalid type of food.")
